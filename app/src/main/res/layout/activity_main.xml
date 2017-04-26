@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context="com.mikecoding.buttonclicker.MainActivity">
+
+    <Button
+        android:id="@+id/click_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click_button"
+        android:enabled="true"
+        android:onClick="myClicker"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/timer_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/click_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/timer_start_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_above="@+id/timer_Text">
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/high_score"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:id="@+id/clicks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/click_button"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/colorWhite"/>
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clicks"
+        android:text="@string/restart"
+        android:onClick="myRestart"
+        android:enabled="false"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

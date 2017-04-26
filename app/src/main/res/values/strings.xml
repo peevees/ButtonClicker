@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ButtonClicker</string>
+    <string name="click_button">Click Me!</string>
+    <string name="timer_start_text">Start Clicking</string>
+    <string name="timer_ticking">Seconds remaining:</string>
+    <string name="timer_end">Time\'s Up!</string>
+    <string name="restart">Restart</string>
+    <string name="high_score">High Score</string>
+    <string name="name">What\'s your name?</string>
+    <string name="ok">OK</string>
+</resources>
